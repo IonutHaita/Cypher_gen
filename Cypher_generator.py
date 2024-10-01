@@ -27,8 +27,9 @@ def decrypt(text):
 decision = input("Please type encrypt to encrypt a message or decrypt to decrypt one:\n")
 if decision == "encrypt":
     modified_text = encrypt(text)
+    print(modified_text)
 elif decision == "decrypt":
     modified_text = decrypt(text)
+    print(modified_text)
 else:
     print("Invalid input, try again!")
-print(modified_text)
